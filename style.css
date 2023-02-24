@@ -94,8 +94,6 @@ h6 {
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
     font-size: var(--fs-regular);
     font-family: var(--ff-regular);
 }
@@ -140,30 +138,31 @@ body {
   background-color: var(--clr-veryDarkCyan);
 }
 
-button {
+.card-type a {
   width: fit-content;
-  border: none;
   border-radius: 2.5em;
   padding: 0.8rem 2.4rem;
   font-size: var(--fs-regular);
   cursor: pointer;
   background-color: var(--clr-veryLightGray);
+  text-decoration: none;
+  text-align: center;
 }
 
-/* button:hover {
+/* a:hover {
   border: 1px solid #fff;
   color: var(--clr-veryLightGray);
 } */
 
-.sedans button {
+.sedans a {
   color: var(--clr-primaryBrightOrange);
 }
 
-.suvs button {
+.suvs a {
   color: var(--clr-darkCyan);
 }
 
-.luxury button {
+.luxury a {
   color: var(--clr-veryDarkCyan);
 }
 
@@ -183,7 +182,7 @@ button {
  }
 
 
- @media (min-width: 820px) {
+ @media (min-width: 811px) {
 
     .cards-container {
       grid-template-columns: 1fr 1fr 1fr;
